@@ -1,0 +1,118 @@
+/* Purple theme */
+body {
+  background-color: #f4f4f9;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #6f42c1; /* Purple */
+}
+
+.navbar a {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+h2.text-purple {
+  color: #6f42c1; /* Purple */
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Table Styling */
+.table-responsive {
+  max-height: 500px; /* Limit height for scrolling */
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%; /* Full width */
+  background-color: #fff;
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Space between rows */
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 15px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+thead {
+  background-color: #6f42c1; /* Purple */
+  color: white;
+}
+
+table tbody tr {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+table tbody tr:hover {
+  background-color: #f0e6ff; /* Light purple hover effect */
+  transform: scale(1.02);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table tbody td {
+  font-size: 14px;
+}
+
+/* Button Styling */
+.btn-danger,
+.btn-warning {
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #c9302c;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #ec971f;
+}
+
+.btn {
+  font-size: 0.8rem;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    #8e2de2,
+    #4a00e0
+  ); /* Purple gradient for button */
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Back Button Styling */
+.btn-light {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* Action Buttons Alignment */
+td button {
+  margin: 0 5px; /* Space between buttons */
+}

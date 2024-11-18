@@ -1,0 +1,133 @@
+/* General Styles for Admin Order History */
+body {
+  background-color: #f3f4f6; /* Light grey background */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #6a11cb; /* Purple background for navbar */
+  color: white;
+}
+
+.navbar .navbar-brand {
+  color: white; /* White text for the brand */
+}
+
+.navbar .btn-light {
+  color: #6a11cb; /* Purple text for logout button */
+  border-color: white; /* White border */
+}
+
+.navbar .btn-light:hover {
+  background-color: white; /* White background on hover */
+  color: #6a11cb; /* Purple text on hover */
+}
+
+/* Card Style */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image Style */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 4px solid #6f42c1; /* Purple border for the card image */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6f42c1; /* Purple for titles */
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+/* Heading Style */
+h2 {
+  color: #6f42c1; /* Purple color for headings */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* View Order Button */
+.view-button {
+  padding: 12px 20px;
+  background-color: #6f42c1; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-button:hover {
+  background-color: #5a2a8f; /* Darker purple on hover */
+}
+
+/* Order Details (description, payment info, etc.) */
+.card-body p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.card-body .total-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6f42c1;
+  margin-top: 15px;
+}
+
+/* Order History Section */
+#ordersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#ordersList .card {
+  flex: 0 0 30%;
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  #ordersList .card {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,48 @@
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #232526, #414345);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand span {
+  color: #ffc107;
+}
+
+.navbar-brand img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar-nav .dropdown-menu {
+  border-radius: 10px;
+  background-color: #414345;
+  color: #fff;
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #ffc107;
+  color: #232526;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand span {
+    font-size: 1.2rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+}

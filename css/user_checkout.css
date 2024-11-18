@@ -1,0 +1,5 @@
+@import url("../css/shared.css");
+
+textarea {
+  resize: none;
+}

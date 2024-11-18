@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #6f42c1;
+}
+
+.navbar .btn-light {
+  color: #6f42c1;
+}
+
+.container h2 {
+  color: #6f42c1;
+}
+
+.form-control,
+.form-select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-success {
+  background-color: #6f42c1;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #5a379e;
+}

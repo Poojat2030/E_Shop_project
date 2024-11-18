@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/user_shop.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- Header Placeholder -->
+    <div id="headerContainer"></div>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.shutterstock.com/image-vector/paper-art-shopping-online-on-260nw-2074005938.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.shutterstock.com/image-vector/online-shopping-banner-set-line-260nw-604452257.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-vector/flat-horizontal-sale-banner-template-with-photo_23-2149000923.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="container mt-4 mb-4">
+      <p class="product_heading">Available Products</p>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <select id="categoryFilter" class="form-select">
+            <option value="">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Books">Books</option>
+            <option value="Beauty & Personal Care">
+              Beauty & Personal Care
+            </option>
+            <option value="Home & Kitchen">Home & Kitchen</option>
+            <option value="Toys & Games">Toys & Games</option>
+            <option value="Sports & Outdoors">Sports & Outdoors</option>
+            <option value="Health & Wellness">Health & Wellness</option>
+            <option value="Automotive">Automotive</option>
+            <option value="Groceries">Groceries</option>
+          </select>
+        </div>
+      </div>
+      <div class="row" id="productsContainer"></div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footerContainer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/header_footer.js"></script>
+    <script src="../js/user_shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

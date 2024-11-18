@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+    <!-- Brand Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img
+        src="https://media.istockphoto.com/id/1420172793/vector/connection-logo-business-global-technology-and-network.jpg?s=612x612&w=0&k=20&c=PSDmuJrOSV9k_GxXtvu8jKHLijvsCT9P9iTGXysPPY4="
+        alt="Logo"
+        width="50"
+        height="50"
+        class="rounded-circle me-2"
+      />
+      <span class="fs-4 fw-bold text-light">E-Shop</span>
+    </a>
+    <!-- Toggler for Mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-2">
+        <li class="nav-item">
+          <a class="nav-link text-light fw-semibold" href="../user/shop.html">
+            <i class="bi bi-house-door fs-5"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fw-semibold" href="../user/cart.html">
+            <i class="bi bi-cart fs-5"></i> Cart
+          </a>
+        </li>
+        <!-- User Section -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-light fw-semibold"
+            href="#"
+            id="userDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person-circle fs-5"></i>
+            <span id="userName">Guest</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end shadow"
+            aria-labelledby="userDropdown"
+          >
+            <li>
+              <a id="loginLink" class="dropdown-item" href="../user/login.html">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+              </a>
+            </li>
+            <li>
+              <button
+                id="logoutLink"
+                class="dropdown-item btn btn-link text-start d-none"
+              >
+                <i class="bi bi-box-arrow-left"></i> Logout
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

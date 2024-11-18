@@ -1,0 +1,117 @@
+/* Purple theme */
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #6a11cb; /* Purple background for navbar */
+  color: white;
+}
+
+.navbar .navbar-brand {
+  color: white; /* White text for the brand */
+}
+
+.navbar .btn-light {
+  color: #6a11cb; /* Purple text for logout button */
+  border-color: white; /* White border */
+}
+
+.navbar .btn-light:hover {
+  background-color: white; /* White background on hover */
+  color: #6a11cb; /* Purple text on hover */
+}
+
+/* Welcome Text */
+h2 {
+  color: #343a40;
+  font-size: 2rem;
+}
+
+/* Container and Row Spacing */
+.container .row {
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 1.3rem;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+button,
+a.btn {
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+
+a.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+a.btn-warning {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+}
+
+a.btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+button:hover,
+a.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+canvas {
+  margin-top: 10px;
+}
+
+/* Equal Height Cards */
+.card.h-50 {
+  height: 50%; /* Reduce the height of the cards */
+}
+
+/* Button Hover Effects */
+a.btn:hover,
+button:hover {
+  opacity: 0.9;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,139 @@
+/* Basic styling for body and overall page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundAnimation 5s ease-in-out infinite; /* Background animation */
+}
+
+/* Login page container styling */
+.login-page {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  animation: fadeIn 1s ease-out; /* Fade-in effect */
+}
+
+/* Heading style with a smooth text animation */
+.login-page h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #6a11cb;
+  text-align: center;
+  opacity: 0;
+  animation: slideIn 1s forwards; /* Slide-in effect for the heading */
+}
+
+/* Input field style with focus effect */
+.form-control {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Button styling with hover animation */
+.btn-primary {
+  background-color: #6a11cb;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2575fc;
+  transform: scale(1.05);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  opacity: 0;
+  animation: showError 0.5s forwards; /* Error message animation */
+}
+
+/* Link to Create New User - Styled as a button-like link */
+a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  50% {
+    background: linear-gradient(to left, #2575fc, #6a11cb);
+  }
+  100% {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showError {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
