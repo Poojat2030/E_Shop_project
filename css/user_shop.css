@@ -21,6 +21,13 @@ body {
   max-width: 1200px;
 }
 
+/* carosal */
+
+.carousel-inner {
+  height: 20%;
+  max-height: 350px;
+}
+
 /* Product Cards */
 .card {
   border: none;
@@ -36,7 +43,7 @@ body {
 
 .card-img-top {
   border-radius: 10px 10px 0 0;
-  object-fit: cover;
+  object-fit: contain;
   height: 200px;
 }
 
